@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import polokiApi
+import polokoApi
 import pprint
 
 STOP_ID_RUCZAJ="8-p055901T"
@@ -8,13 +8,13 @@ STOP_ID_RZEMIESNICZA="8-p070601T"
 
 ROUTE_ID_23="8-20"
 
-#a=polokiApi.timetables.getAgencies()
+#a=polokoApi.timetables.getAgencies()
 #groups:=
 #             {u'iconUrl': u'/agencies/photo/g_Krak\xf3w.png',
 #              u'id': u'8',
 #              u'name': u'MPK Krak\xf3w'},
 
-#a=polokiApi.timetables.getRoutes('mpk_krakow')
+#a=polokoApi.timetables.getRoutes('mpk_krakow')
 #{u'agencyId': u'mpk_krakow',
 #  u'direction': u'TO',
 #  u'id': u'8-20',
@@ -22,7 +22,7 @@ ROUTE_ID_23="8-20"
 #  u'name': u'23',
 #  u'routeType': u'TRAM'},
 
-#a=polokiApi.timetables.getRoute('8-20','TO')
+#a=polokoApi.timetables.getRoute('8-20','TO')
 #{u'directions': [u'TO'],
 # u'lastStop': u'Czerwone Maki',
 # u'name': u'23',
@@ -35,16 +35,16 @@ ROUTE_ID_23="8-20"
 #             u'minutesToStop': None,
 #             u'name': u'Czerwone Maki'},
 
-#a=polokiApi.timetables.getStop('8-p055901T')
+#a=polokoApi.timetables.getStop('8-p055901T')
 
 #{u'id': u'8-p055901T',
 # u'lat': 50.033653004079234,
 # u'lng': 19.938637912273407,
 # u'name': u'Rzemie\u015blnicza'}
 
-a=polokiApi.timetables.getTimetable(
+a=polokoApi.timetables.getTimetable(
     ROUTE_ID_23,
-    polokiApi.DIRECTION_TO,
+    polokoApi.DIRECTION_TO,
     STOP_ID_RUCZAJ)
 
 #{u'groups': [{u'days': [u'FRIDAY'],
